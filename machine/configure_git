@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# setup git username and email
+
+read -p "Enter your github username: " GITHUB_USERNAME
+read -p "Enter your github email: " GITHUB_EMAIL
+
+# Replace <GITHUB_USERNAME> with the GitHub username you want to check
+
+# Send a request to the GitHub API to retrieve user details
+response=$(curl -s "https://api.github.com/users/$GITHUB_USERNAME")
+
+# Check the response from the API
+if [[ $response == *"\"message\": \"Not Found\""* ]]; then
+	echo "User $GITHUB_USERNAME does not exist"
+else
+	echo "User $GITHUB_USERNAME exists"
+	git config --global user.name "$GITHUB_USERNAME"
+	git config --global user.email $GITHUB_EMAIL
+fi

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Applies all configs
+
+install_dir=$PWD
+
+source ./configure_aliases
+source ./configure_vim
+echo -e "\n\nAliases and Vimrc Done\n\n"
+
+cd $install_dir
+source ./configure_sandbox
+echo -e "\n\nBuild essentials, Make, Cmake, Unzip, Stderred, Valgrind Done\n\n"
+
+cd $install_dir
+source ./configure_python3
+echo -e "\n\nPython Upgraded to 3.10\n\n"
+
+cd $install_dir
+source ./configure_betty
+echo -e "\n\nBetty Done\n\n"
+
+cd $install_dir
+source ./configure_git
