@@ -1,7 +1,5 @@
 <h1 align="center"> Configuration :hammer_and_wrench: </h1>
 
----
-
 ## Machine :desktop_computer:
 <p>Scripts to configure a machine for use </p>
 
@@ -10,8 +8,6 @@
 ```commandline
  $ sudo ./global_setup
 ```
-
----
 
 This will install the following utilities and some of their dependencies
 | Utility | Description |
@@ -27,9 +23,9 @@ This will install the following utilities and some of their dependencies
 
 ---
 
-| Aliases: gcce = gcc -Wall -Werror -Wextra -pedantic -std=gnu89
-|	x = chmod +x
-|	PS1 and PS2 Names
+| Aliases: gcce = gcc -Wall -Werror -Wextra -pedantic -std=gnu89 
+| x = chmod +x 
+| PS1 and PS2 Names 
 
 Checkout these files for aliases and vim configurations:
 
@@ -40,9 +36,9 @@ Checkout these files for aliases and vim configurations:
 
 ```
 
----
-
 ## Server :earth_africa:
+
 | Utility | Description |
+| --- | --- |
 | HAProxy | Load balancer |
 | Nginx | Web Server |
