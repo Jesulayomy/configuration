@@ -1,14 +1,27 @@
 #!/usr/bin/env bash
 # Configures a server to work with nginx
+
 apt-get -y update
 apt-get -y install nginx
+
 # Adds the Default and 404 pages to the html folder with proper content
-echo "Hello World!" | tee /var/www/html/index.nginx-debian.html
-echo "Ceci n'est pas une page" | tee /usr/share/nginx/html/custom_404.html
+echo "Hello World!\nHolberton School!" | tee /var/www/html/index.nginx-debian.html
+echo "Ceci n'est pas une page" | tee /var/www/html/custom_404.html
+
 # Disables Password authentication for ease of login
 echo -e "    PasswordAuthentication no" | tee -a /etc/ssh/ssh_config
+
 # Routes the page '/redirect_me' to a different page (Moved permanently condition)
-sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/jesulayomy permanent;\n\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\t\troot \/usr\/share\/nginx\/html;\n\t\tinternal;\n\t}/" /etc/nginx/sites-available/default
+sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v=dQw4w9WgXcQ permanent;\n\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}/" /etc/nginx/sites-available/default
+
 # Adds the custom X-Served-By Header to the default file
 sed -i "s/^\tlocation \/ {/\tlocation \/ {\n\t\tadd_header X-Served-By \"$HOSTNAME\";/" /etc/nginx/sites-available/default
+
+# Adds a new branch /hbnb_static (will host the webstatic of airbnb)
+mkdir -p /data/web_static/releases/test/ /data/web_static/shared/
+echo -e "Hello There!\nGeneral Kenobi!" | tee /data/web_static/releases/test/index.html
+ln -sf /data/web_static/releases/test/ /data/web_static/current
+chown -R ubuntu:ubuntu /data/
+sed -i "s.^\tlocation / {.\tlocation /hbnb_static/ {\n\t\talias /data/web_static/current/;\n\t}\n\n\tlocation / {." /etc/nginx/sites-available/default
+
 service nginx restart
