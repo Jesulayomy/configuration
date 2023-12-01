@@ -42,3 +42,4 @@ Checkout these files for aliases and vim configurations:
 | --- | --- |
 | HAProxy | Load balancer |
 | Nginx | Web Server |
+| Configurations | For past projects |

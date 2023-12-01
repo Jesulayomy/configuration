@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S Tech</title>
+    <meta name="author" content="Aina Jesulayomi, Samuel Iwelumo" />
+    <meta
+      name="description"
+      content="Become a pro at software engineering, backend or frontend. Learn Software engineering basics today!"
+    />
+    <meta
+      name="keywords"
+      content="frontend, devops, backend, software, engineering, web development, programming, expert, coding, aina, jesulayomi, samuel, iwelumo, about, skills, experience, education, contact, alx, github"
+    />
+    <meta name="language" content="english" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/3f2dbd4340.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .banner-container {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+      }
+
+      .banner-image {
+        width: 100%;
+        height: auto;
+      }
+
+      .copy {
+        font-size: 1.3rem;
+      }
+
+      .banner-text {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        background-color: rgb(33, 37, 41);
+        color: white;
+        padding: 10px;
+        width: 500%;
+        box-sizing: border-box;
+      }
+      .navbar-brand {
+        display: inline-block;
+        text-decoration: none;
+        color: #fffffe;
+      }
+      /* .navbar-brand { */
+        /* font-size: x-large; */
+        /* padding: -50px; */
+        /* position: absolute; */
+        /* background-image: url("stech_light2.jpg"); */
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
+        /* background-position-y: 10px; */
+        /* background-position-x: -20px; */
+      /* } */
+      .logo-dark {
+        background-size: cover;
+        background-image: url("stech_dark2.png");
+      }
+      .logo-light {
+        background-size: cover;
+        background-image: url("stech_light2.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <div id="docBody">
+      <!-- Navigation Bar -->
+      <nav class="navbar bg-light navbar-expand-md sticky-top">
+        <div class="container">
+          <a class="navbar-brand logo-light" id="navbarBrand" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          
+          <!-- Toggle button (for mobile) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-angle-double-down"></i>
+          </button>
+
+          <!-- Navbar items -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  href="#enroll"
+                  class="nav-link"
+                  rel="Enroll in a program"
+                  aria-label=""
+                  >Enroll</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#faqs"
+                  class="nav-link"
+                  rel="FAQs"
+                  aria-label="Frequently asked questions"
+                  >FAQs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#contact"
+                  class="nav-link"
+                  rel="Contacts methods"
+                  aria-label="Contact any of our channels"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="text-end">
+              <button
+                id="darkModeToggle"
+                class="btn btn-dark justify-content-between rounded-pill"
+              >
+                <i class="fa fa-sun"></i>
+                <i class="fa fa-circle-o ps-2"></i>
+                <i class="fa fa-moon d-none"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End  Navigation Bar -->
+      <!-- <div class="banner-container">
+        <img src="banner1.jpeg" alt="Banner" class="banner-image" />
+        <div class="banner-text">
+          <h1 class="display-1">S-TECH ACADEMY</h1>
+        </div>
+      </div> -->
+      <!-- Start Courses Section -->
+      <section id="courses" class="section mb-5">
+        <div class="container">
+          <div class="row text-center">
+            <div
+              class="col-full topics display-4 mt-4"
+            >
+              <h2>
+                <p class="display-6"><strong>S-TECH ACADEMY</strong></p>
+                <p>Learn the Most in-demand Skills For a Career in Tech.</p>
+              </h2>
+            </div>
+          </div>
+          <div class="row mt-4 justify-content-center">
+            <div class="col-12 text-center">
+              <div class="fs-3 fs-sm-5">
+                <p class="copy">
+                  Become a Pro at Web Development in 6 Months or Less. With
+                  industry-level coding lessons from ALX student ambassador
+                  <a
+                    class="link-dark link-underline-opacity-25"
+                    href="https://www.linkedin.com/in/samuel-iwelumo-8a43a6219"
+                  >
+                    Samuel Iwelumo
+                  </a>
+                  You will transition from a Beginner tech enthusiast to a full-blown 
+                  Tech Expert capable of solving real-world problems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="enroll" class="section mb-5">
+        <div class="container">
+          <div class="row text-center">
+            <div
+              class="col-full topics display-6 mt-4 border-bottom border-success"
+            >
+              <p>Enroll</p>
+            </div>
+            <div class="container-fluid my-4">
+              <div class="row justify-content-around">
+                <div class="card px-0 m-2 col-10 col-md-5 col-xl-3">
+                  <img
+                    src="./frontend.gif"
+                    class="card-img-top"
+                    alt="SCHub Repo Banner"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title"><p>Intro to Frontend</p></h4>
+                    <div class="my-2" id="schubDesc">
+                      <p class="card-text text-start justify-content">
+                        In this introduction to Frontend programme you will 
+                        learn HTML, CSS, Bootstrap (a CSS framework) and
+                        JavaScript as a programming language and how it is used
+                        to interact with webpages and bring your websites to
+                        life. You will also learn responsive design and
+                        designing for mobile devices using CSS flexbox, grid,
+                        media queries and Bootstrap.
+                      </p>
+                    </div>
+                    <div class="row text-start">
+                      <p class="my-0"><strong>Duration:</strong> 4 Months</p>
+                      <p class="mb-2">
+                        <strong>Price:</strong> N20000 / month or N70000 one-time payment
+                      </p>
+                    </div>
+                    <div class="row text-center justify-content-around">
+                      <button
+                        class="col-3 btn btn-outline-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target=".schub-collapse"
+                        aria-expanded="false"
+                        aria-controls="schubDesc schubTech"
+                      >
+                        Skills
+                      </button>
+                      <button class="col-3 btn btn-outline-success">
+                        <a
+                          href="https://bit.ly/register_stech"
+                          class="link-dark link-underline link-underline-opacity-0"
+                          target="_blank"
+                          >Enroll</a
+                        >
+                      </button>
+                      <button class="col-4 btn btn-outline-warning">
+                        <a
+                          href="https://docs.google.com/document/d/1gw4EkJcDHj_r2WMkrYY0CUUMhbhWvkSaeXx9EgQg3o0/edit?usp=sharing"
+                          class="link-dark link-underline link-underline-opacity-0"
+                          target="_blank"
+                          >Lessons</a
+                        >
+                      </button>
+                    </div>
+                    <div class="row collapse schub-collapse" id="schubTech">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Html
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Html"
+                            src="https://cdn.simpleicons.org/html5/E34F26"
+                            alt="html5 icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          CSS
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="CSS"
+                            src="https://cdn.simpleicons.org/css3/1572B6"
+                            alt="css3 icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          Bootstrap
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Bootstrap"
+                            src="https://cdn.simpleicons.org/bootstrap/7952B3"
+                            alt="Bootstrap icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          JavaScript
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Js"
+                            src="https://cdn.simpleicons.org/javascript/F7DF1E"
+                            alt="JavaScript icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          JQuery
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Jquery"
+                            src="https://cdn.simpleicons.org/jquery/0769AD"
+                            alt="JQuery icon"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card px-0 m-2 col-10 col-md-5 col-xl-3">
+                  <img
+                    src="./react.gif"
+                    class="card-img-top border-bottom border-dark"
+                    alt="SCHub Repo Banner"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      <p>Frontend <i class="fa fa-times"></i> React</p>
+                    </h4>
+                    <div class="my-2" id="hbnbDesc">
+                      <p class="card-text text-start justify-content">
+                        This goes steps further with the most popular framework
+                        for javascript, React, which builds faster and more
+                        efficient User Interfaces.
+                      </p>
+                    </div>
+                    <div class="row text-start">
+                      <p class="my-0"><strong>Duration:</strong> 6 Months</p>
+                      <p class="mb-2">
+                        <strong>Price:</strong> N20000 / month or N100000 one-time payment
+                      </p>
+                    </div>
+                    <div class="row text-center justify-content-around">
+                      <button
+                        class="col-3 btn btn-outline-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target=".hbnb-collapse"
+                        aria-expanded="false"
+                        aria-controls="hbnbDesc hbnbTech"
+                      >
+                        Skills
+                      </button>
+                      <button class="col-3 btn btn-outline-success">
+                        <a
+                          href="https://bit.ly/register_stech"
+                          class="link-dark link-underline link-underline-opacity-0"
+                          target="_blank"
+                          >Enroll</a
+                        >
+                      </button>
+                      <button class="col-4 btn btn-outline-warning">
+                        <a
+                          href="https://docs.google.com/document/d/1odJXMt_FJSkQbw-eCWIHiWzDt6qZEXmGYs0WE-x3eV0/edit?usp=sharing"
+                          class="link-dark link-underline link-underline-opacity-0"
+                          target="_blank"
+                          >Lessons</a
+                        >
+                      </button>
+                    </div>
+                    <div class="row collapse hbnb-collapse" id="hbnbTech">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Html
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Html"
+                            src="https://cdn.simpleicons.org/html5/E34F26"
+                            alt="html5 icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          CSS
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="CSS"
+                            src="https://cdn.simpleicons.org/css3/1572B6"
+                            alt="css3 icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          Bootstrap
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Bootstrap"
+                            src="https://cdn.simpleicons.org/bootstrap/7952B3"
+                            alt="Bootstrap icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          JavaScript
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Js"
+                            src="https://cdn.simpleicons.org/javascript/F7DF1E"
+                            alt="JavaScript icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          JQuery
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Jquery"
+                            src="https://cdn.simpleicons.org/jquery/0769AD"
+                            alt="JQuery icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          React Js
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="React"
+                            src="https://cdn.simpleicons.org/react/61DAFB"
+                            alt="React icon"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card px-0 m-2 col-10 col-md-5 col-xl-3">
+                  <img
+                    src="./backend.gif"
+                    class="card-img-top border-bottom p-2 border-dark"
+                    alt="Gnu Bash Logo"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title"><p>Back-End Web Developer</p></h4>
+                    <div class="my-2" id="shellDesc">
+                      <p class="card-text text-start">
+                        In the backend development Programme, you will be given top tier lessons 
+                        on backend programming languages. With skills like programming, database
+                        management systems, frameworks, you can build fast and
+                        scalable web applications.
+                      </p>
+                    </div>
+                    <div class="row text-start">
+                      <p class="my-0"><strong>Duration:</strong> 6 Months</p>
+                      <p class="mb-2">
+                        <strong>Price:</strong> N20000 / month or N100000 one-time payment
+                      </p>
+                    </div>
+                    <div class="row text-center justify-content-around">
+                      <button
+                        class="col-3 btn btn-outline-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target=".shell-collapse"
+                        aria-expanded="false"
+                        aria-controls="shellDesc shellTech"
+                      >
+                        Skills
+                      </button>
+                      <button class="col-3 btn btn-outline-success">
+                        <a
+                          href="https://bit.ly/register_stech"
+                          class="link-dark link-underline link-underline-opacity-0"
+                          target="_blank"
+                          >Enroll</a
+                        >
+                      </button>
+                      <button class="col-4 btn btn-outline-warning">
+                        <a
+                          href="https://docs.google.com/document/d/12JhOCoR0NhN4HVKKrn8fwDvsTpWCaE84ViEwp1vn3rE/edit?usp=sharing"
+                          class="link-dark link-underline link-underline-opacity-0"
+                          target="_blank"
+                          >Lessons</a
+                        >
+                      </button>
+                    </div>
+                    <div class="row collapse shell-collapse" id="shellTech">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Python
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Python"
+                            src="https://cdn.simpleicons.org/python/3776AB"
+                            alt="Python icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          Shell
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Bash"
+                            src="https://cdn.simpleicons.org/gnubash/4EAA25"
+                            alt="Bash Shell icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          JavaScript
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Js"
+                            src="https://cdn.simpleicons.org/javascript/F7DF1E"
+                            alt="JavaScript icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          MySQL
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="MySQL"
+                            src="https://cdn.simpleicons.org/mysql/4479A1"
+                            alt="MySQL icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          Flask
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Flask"
+                            src="https://cdn.simpleicons.org/flask/15171A"
+                            alt="Flask icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          Jinja
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Jinja"
+                            src="https://cdn.simpleicons.org/jinja/B41717"
+                            alt="Jinja icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          Nginx
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Nginx"
+                            src="https://cdn.simpleicons.org/nginx/009639"
+                            alt="Nginx icon"
+                          />
+                        </li>
+                        <li class="list-group-item">
+                          Certbot
+                          <img
+                            loading="lazy"
+                            height="20"
+                            width="20"
+                            title="Certbot"
+                            src="https://cdn.simpleicons.org/letsencrypt/003A70"
+                            alt="Lets encrypt icon"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQs -->
+      <section id="faqs" class="container-fluid text-center mb-3">
+        <div class="container">
+          <div class="row text-center">
+            <div
+              class="col-full topics display-6 my-4 border-bottom border-primary"
+            >
+              <p>FAQs</p>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Which of the classes should I register for?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-start justify-content">
+                    <code>Ans:</code> What you register for is totally up to you
+                    and what you want to become a master at. <strong>Frontend developers</strong> are
+                    responsible for the visual and interactive aspects of a
+                    website or web application that users interact with
+                    directly. They work on the client side of the application,
+                    focusing on the user interface (UI) and user experience
+                    (UX). <strong>Backend developers</strong> focus on the server-side logic and
+                    database management of a web application. They handle the
+                    behind-the-scenes operations that power the frontend and
+                    manage the data.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  What is the mode of learning?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-start justify-content">
+                    <code>Ans:</code> The mode of learning is strictly virtual
+                    using Google and Jitsi meets.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Will the sessions be recorded?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-start justify-content">
+                    <code>Ans:</code> Yes, all learning sessions will be recorded for
+                     references and revisions. The recordings will be uploaded and made
+                    available for students in an easy-to-watch format.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Can I register for another class when I am done with a
+                  particular class?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-start justify-content">
+                    <code>Ans:</code> Yes, you can choose to register for another class. 
+                    For example you can register for Back-end development after finishing
+                    Front-end development.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Can I register and run 2 classes simultaneously?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-start justify-content">
+                    <code>Ans:</code> Technically, It is possible to run two classes at the same time. 
+                    But we recommend you run the classes one after the other. This will allow you 
+                    to focus and get the most out of each Programme and avoid being overwhelmed by the 
+                    volume of learning content and work required. But if you feel you are up to it, 
+                    you can go ahead and register for two programmes at a discounted rate.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Can I pay for classes in installments?
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-start justify-content">
+                    <code>Ans:</code> You can pay in installments not more than
+                    twice per month.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  What days and time will the classes hold?
+                </button>
+              </h2>
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-start justify-content">
+                    <code>Ans:</code> The classes will hold weekends from
+                    Friday-Sunday to enable full time workers and students
+                    participate in the program. The time will be decided by
+                    student's votes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section-->
+      <section id="contact" class="container-fluid text-center bg-dark">
+        <div class="container text-center">
+          <div class="row">
+            <div
+              class="text-light col-full topics display-6 mt-4 border-bottom border-warning"
+            >
+              CONTACT
+            </div>
+          </div>
+
+          <div class="row p-3">
+            <div class="row text-light">
+              <p>
+                Have any questions or suggestions? Contact us through any of the
+                following channels.
+              </p>
+            </div>
+            <div class="col-4">
+              <a
+                href="mailto:samueliwelumo.tech@gmail.com"
+                target="_blank"
+                class="link-light"
+              >
+                <i class="fa fa-envelope fa-2x"></i>
+              </a>
+            </div>
+            <div class="col-4">
+              <a
+                href="https://bit.ly/register_stech"
+                target="_blank"
+                class="link-light"
+              >
+                <i class="fa fa-whatsapp fa-2x"></i>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="tel:+2347047672684" target="_blank" class="link-light">
+                <i class="fa fa-phone fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        const docBody = document.getElementById("docBody");
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const brand = document.getElementById("navbarBrand");
+        const moonIcon = darkModeToggle.querySelector(".fa-moon");
+        const sunIcon = darkModeToggle.querySelector(".fa-sun");
+        const circleIcon = darkModeToggle.querySelector(".fa-circle-o");
+        const paragraphs = document.querySelectorAll("p");
+        const lLists = document.querySelectorAll("li");
+        const anchors = document.querySelectorAll("a");
+        const uLists = document.querySelectorAll("ul");
+        const navBar = document.querySelector("nav");
+        const iFa = document.querySelectorAll("i");
+        const cardBodies = document.querySelectorAll("div.card");
+        const accordions = document.querySelectorAll("div.accordion-item");
+        const accordionbuttons = document.querySelectorAll(
+          "button.accordion-button"
+        );
+        const butTons = document.querySelectorAll("button.btn-outline-dark");
+        const aBtns = document.querySelectorAll("a.btn-outline-dark");
+
+        //  text-bg-dark Check if the user's preference is set to dark mode
+        const prefersDarkMode = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+
+        // Set the initial icon based on the user's preference
+        if (prefersDarkMode) {
+          toggleDarkMode();
+        }
+
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+          docBody.classList.toggle("bg-dark");
+          document.body.classList.toggle("dark-mode");
+          darkModeToggle.classList.toggle("btn-dark");
+          darkModeToggle.classList.toggle("btn-secondary");
+          moonIcon.classList.toggle("d-none");
+          circleIcon.classList.toggle("pe-2");
+          circleIcon.classList.toggle("ps-2");
+          sunIcon.classList.toggle("d-none");
+          navBar.classList.toggle("bg-dark");
+          brand.classList.toggle("logo-dark");
+          brand.classList.toggle("logo-light");
+
+          paragraphs.forEach((paragraph) => {
+            paragraph.classList.toggle("text-light");
+          });
+          accordionbuttons.forEach((press) => {
+            press.classList.toggle("bg-dark");
+            press.classList.toggle("text-light")
+          });
+          accordions.forEach((note) => {
+            note.classList.toggle("bg-dark");
+            note.classList.toggle("border-light");
+          });
+          iFa.forEach((paragraph) => {
+            paragraph.classList.toggle("fa-inverse");
+          });
+          butTons.forEach((butTon) => {
+            butTon.classList.toggle("btn-outline-light");
+            butTon.classList.toggle("btn-outline-dark");
+          });
+          aBtns.forEach((aBtn) => {
+            aBtn.classList.toggle("btn-outline-light");
+            aBtn.classList.toggle("btn-outline-dark");
+          });
+          cardBodies.forEach((cardBody) => {
+            cardBody.classList.toggle("text-bg-dark");
+          });
+          anchors.forEach((anchor) => {
+            anchor.classList.toggle("text-light");
+          });
+          lLists.forEach((lList) => {
+            lList.classList.toggle("bg-dark");
+            lList.classList.toggle("text-light");
+          });
+        }
+
+        // Add event listener to the button
+        darkModeToggle.addEventListener("click", toggleDarkMode);
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</html>
