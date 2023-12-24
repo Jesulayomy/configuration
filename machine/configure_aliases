@@ -5,5 +5,7 @@ echo -e "# added by configure_aliases script from github.com/jesulayomy/configs/
 echo -e "# C-compilation options\nalias gcce='gcc -Wall -Werror -Wextra -pedantic -std=gnu89'\n" | tee -a ~/.bashrc > ~/configure_aliases_output
 echo -e "# Permissions Modifier\nalias x='chmod +x'\n" | tee -a ~/.bashrc > ~/configure_aliases_output
 echo -e "# Good colorised prompt for PS1 and PS2\nPS1=\"\\[\\e[0;32m\\]/\\W \\[\\e[0;35m\\]\\$ \\[\\033[0m\\]\"\nPS2=\"\\e[0;36m\\]-> \\[\\033[0m\\]\"" | tee -a ~/.bashrc > ~/configure_aliases_output
-echo -e "# venv shortcuts\nalias venv='python3 -m venv --prompt \"\\\\\\\\033[0;36m \${PWD##*/} \\\\\\\\033[0m\" .venv'\nalias activate='source .venv/bin/activate'" | tee -a ~/.bashrc > ~/configure_aliases_output
+echo "# venv shortcuts" | tee -a ~/.bashrc > ~/configure_aliases_output
+echo "alias venv='python3 -m venv --prompt \"\[\e[0;36m\]${PWD##*/}\[\033[0m\]\" .venv'" | tee -a ~/.bashrc > ~/configure_aliases_output
+echo "alias activate='source .venv/bin/activate'" | tee -a ~/.bashrc > ~/configure_aliases_output
 echo -e "# Python clear cache\nalias nocache='find . -type d -name \"__pycache__\" -exec rm -r {} \\;'" | tee -a ~/.bashrc > ~/configure_aliases_output
