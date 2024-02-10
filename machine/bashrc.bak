@@ -1,4 +1,4 @@
-
+# Aliases I use for most of my machines
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
